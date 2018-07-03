@@ -60,11 +60,24 @@ img {
 }
 
 .name a,
-.main-nav a {
+.main-nav a,
+.label{
   text-align: center;
   display: block;
   padding: 10px 15px;
 }
+
+.name a {
+    text-align: left;
+    padding-left: 30px;
+}
+
+label{
+    position: fixed;
+    top: 0px;
+    right: 30px;
+}
+
 
 .name a:hover{
     color:#616E7A;
@@ -133,6 +146,65 @@ h2{
 
 
 
+/* --- test for hamburger ---*/
+
+
+
+.checkbox {
+  display: none;
+} 
+.label{
+    -webkit-transition:.3s;
+	 -moz-transition:.3s;
+	 -o-transition:.3s;
+	 transition:.3s;
+  display: inline-block;
+  float: right;
+	background-size:cover;
+	background:rgba(0,132,255,0.15);
+}
+
+.checkbox:checked + .label {
+		 -webkit-transition:.3s;
+	 -moz-transition:.3s;
+	 -o-transition:.3s;
+	 transition:.3s;
+		background:rgba(0,132,255,0.3)
+}
+
+#mobiledropmenu:checked ~ .title {
+	 -webkit-transition:1s;
+	width: 100%;
+	height: 185px;
+	opacity: 1;
+}
+	
+.title {
+	 -webkit-transition:1s;
+	width: 0%;
+	height: 0px;
+	opacity: 0;
+}
+			
+			.button1 {
+				color:#fff;
+				text-decoration:none;
+					border-top:1px solid #fff;
+					text-align:center;
+					text-transform:uppercase;
+					width:100%;
+				}
+					
+					.button1:hover {
+					cursor:pointer;
+					background:rgba(0,132,255,0.15);
+							}
+							
+
+
+
+
+
 
 /* ================================= 
 2 Media Queries
@@ -160,15 +232,26 @@ h2{
   width: 50%;
 }
     
+.main-header{
+        padding: 0 0 45px 0;
+    }
+    
+.name a {
+        padding-left: 15px
+    }
 
 
+    
+    
 
 
 /* ================================= 
-2 Media Queries
+3 Media Queries
 ==================================== */
 
 @media (min-width: 800px) {
+
+
 
 
 .container {
@@ -198,6 +281,11 @@ h2{
   display: inline-block;
 }
 
+.main-header{
+        padding: 0;
+    }
+    
+ 
 
     
 
@@ -214,12 +302,28 @@ h2{
 
 
 
+    /* --- test for hambueger---*/
+    
+
+@media only screen and (min-width: 800px){
+.title {
+	width: 100%;
+	opacity: 1;
+}
+  .button1 {
+    height: 0px;
+    display: inline-block;
+    width: auto;
+   }
+  .label { display: none; }
+}
+
 
 
 
 
 /* ================================= 
-  3 Media Queries
+  4 Media Queries
 ==================================== */
 
 @media (min-width: 1200px) {
