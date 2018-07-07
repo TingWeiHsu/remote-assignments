@@ -21,8 +21,8 @@ body {
 }
 
 p {
-	font-size: .95em;
-	margin-bottom: 1.8em;
+	font-size: 1.5em;
+	margin-bottom: 0em;
 }
 
 h2,
@@ -93,6 +93,11 @@ label{
 	color: #616E7A;
 }
 
+
+#hidden{
+    display: none;
+}
+
 /* ---- Layout Containers ---- */
 
 .main-header{
@@ -123,8 +128,9 @@ label{
 
 
 
-.headline {
+h1 .headline {
   margin: 0px;
+  font-size: 25px;
 }
 
 
@@ -185,11 +191,16 @@ h2{
 	height: 0px;
 	opacity: 0;
 }
-			
+		
+
+.main-nav{
+    padding-right: 
+    
+}
 			.button1 {
-				color:#fff;
+				color:rgba(0,0,0,0.0);
 				text-decoration:none;
-					border-top:1px solid #fff;
+					
 					text-align:center;
 					text-transform:uppercase;
 					width:100%;
@@ -237,7 +248,11 @@ h2{
     }
     
 .name a {
-        padding-left: 15px
+        padding-left: 15px;
+    }
+    
+.main-nav {
+        padding-top: 45px;
     }
 
 
@@ -275,6 +290,7 @@ h2{
 
 .main-nav {
   float: right;
+  padding: 0px;
 }
 
 .main-nav li {

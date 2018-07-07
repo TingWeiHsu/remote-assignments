@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Week1 homework</title>
+	<title>Week2 homework</title>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -10,10 +10,10 @@
 <body>
 	
 	<header class="main-header">
-    <div class="container clearfix">
+    <div class="container clearfix freeze">
       <h1 class="name"><a href="#">Website Title/Logo</a></h1>
         
-        
+       
 <input type="checkbox" class="checkbox" name="menu" value="mobiledropmenu" id="mobiledropmenu">
 <label for="mobiledropmenu" class="label">☰</label>
         
@@ -34,8 +34,9 @@
     </div><!-- div.container-->
 	</header><!--/.main-header-->   
 
-	<div class="banner">
-		<h1 class="headline">Welcom Message</h1>
+	<div id="click" class="banner" onclick="myFunction()">
+		<h1  class="headline" >Welcom Message</h1>
+
 	</div><!--/.banner-->
 	
   <div class="container clearfix">
@@ -56,13 +57,35 @@
       
       <div class="fourth col">
         <h3>Content box4</h3>
+      </div><!--/.fourth-->	
+      
+      <button onclick="myHide()" class="button" >Call to action!</button>
+      
+  </div> <!-- div.container-->
+    
+      <div id="hidden" class="container clearfix">
+      
+      <h2> </h2>
+      
+      <div class="primary col">
+        <h3>Content box1</h3>
+      </div><!--/.primary-->
+      
+      <div class="secondary col">
+        <h3>Content box2</h3>
+      </div><!--/.secondary-->
+      
+      <div class="tertiary col">
+        <h3>Content box3</h3>
       </div><!--/.tertiary-->	
       
-      <a href="#" class="button">Call to action!</a>
+      <div class="fourth col">
+        <h3>Content box4</h3>
+      </div><!--/.fourth-->	
       
   </div> <!-- div.container-->
     
 
-	
+    <script src=js/javascript.js></script>
 </body>
 </html>
